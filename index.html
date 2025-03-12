@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube</title>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            
-        </nav>
+      <nav class="w-11/12 mx-auto py-5">
+        <div class="navbar bg-base-100 border-b-2 border-[#17171720]">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div>
+                <img class="w-[120px] pl-4" src="./assets/Logo.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <label class="input">
+              <svg
+                class="h-[1em] opacity-50"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </g>
+              </svg>
+              <input type="search" required placeholder="Search" />
+            </label>
+          </div>
+          <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle">
+              <div class="indicator pr-4">
+                <span class="bg-red-500 text-white p-3 rounded">Blog</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
-</body>
+    <main>
+        <div id="buttonAll" class="flex justify-center items-center gap-2">
+            <button class="btn bg-red-500 text-white">All</button>
+        </div>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
